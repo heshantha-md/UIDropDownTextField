@@ -372,8 +372,6 @@ class UIDropDownTextField: UITextField, UITextFieldDelegate, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        tableView.reloadData()
-        
         let cell: UIDropDownTableViewCell = tableView.cellForRow(at: indexPath)
             as! UIDropDownTableViewCell
         cell.cellRightIcon.image = selectedIcon
