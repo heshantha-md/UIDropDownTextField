@@ -114,8 +114,8 @@ class UIDropDownTextField: UITextField, UITextFieldDelegate, UITableViewDelegate
         let dropDownTextFieldTopConstraint = NSLayoutConstraint(item: self.dropDownTextField, attribute: .top, relatedBy: .equal, toItem: self.containerView, attribute: .top, multiplier: 1, constant: 0)
         let dropDownTextFieldRightConstraint = NSLayoutConstraint(item: self.dropDownTextField, attribute: .right, relatedBy: .equal, toItem: self.containerView, attribute: .right, multiplier: 1, constant: 0)
         let dropDownTextFieldLeftConstraint = NSLayoutConstraint(item: self.dropDownTextField, attribute: .left, relatedBy: .equal, toItem: self.containerView, attribute: .left, multiplier: 1, constant: 0)
-        let dropDownTextFieldWidthConstraint = NSLayoutConstraint(item: self.dropDownTextField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: _height)
-        self.containerView.addConstraints([dropDownTextFieldTopConstraint,dropDownTextFieldRightConstraint,dropDownTextFieldLeftConstraint,dropDownTextFieldWidthConstraint])
+        let dropDownTextFieldHeightConstraint = NSLayoutConstraint(item: self.dropDownTextField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: _height)
+        self.containerView.addConstraints([dropDownTextFieldTopConstraint,dropDownTextFieldRightConstraint,dropDownTextFieldLeftConstraint,dropDownTextFieldHeightConstraint])
         self.dropDownTextField.delegate = self
         self.containerView.addSubview(self.dropDownTextField)
         
